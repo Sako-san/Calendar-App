@@ -1,22 +1,122 @@
-.App {
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.month-select {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.days-row {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-evenly;
+}
+
+.day-of-week {
+  height: 100%;
+  width: 10%;
+  flex-direction: row;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.grid-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.col {
+  display: flex;
+  height: 100px;
+  width: 14%;
+  justify-content: center;
+  text-align: center;
+  background-color: palegreen;
+  margin: 1px;
+}
+
+.disabled {
+  color: slategray;
+  background-color: lightgray;
+  pointer-events: none;
+}
+
+.today {
+  background-color: red;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.booked {
+  background-color: red;
+  pointer-events: none;
+}
+
+.number {
+ padding-top: 5px; 
+}
+
+.modal {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 50;
+  z-index: 1;
 }
 
-.App-link {
-  color: #09d3ac;
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  background: white;
+
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 200px;
 }
