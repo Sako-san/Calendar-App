@@ -1,5 +1,6 @@
 {
   "name": "react-calendar",
+  "homepage": "https://www.timsakow.com/Calendar-App/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
